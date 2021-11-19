@@ -1,0 +1,17 @@
+void string_init(char **s);
+size_t writefunc(void *ptr, size_t size, size_t nmemb, char **s);
+char* gotoURL(char *path);
+int isDirectory(char *path);
+char* readMail(char *parent_dir, char *filename);
+int isFile(char *path);
+int getFileDetails(char *path, char **filename, char **content);
+int extractFileDetails(char *path, char **filename, char **parent_dir);
+static size_t upload_source(char *ptr, size_t size, size_t nmemb, void *userp);
+int createFile(char *path, char *content);
+int createDirectory(char *path);
+int deleteFile(char *path);
+char* getFiles(char *path);
+int isEmpty(char *path);
+int deleteDir(char *path);
+char* nameFromUID(char *parent_dir, char *uid);
+char** getAllFiles(char *path);
