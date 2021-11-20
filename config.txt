@@ -1,0 +1,4 @@
+imaps://imap.gmail.com
+993
+<email_id>
+<password>
